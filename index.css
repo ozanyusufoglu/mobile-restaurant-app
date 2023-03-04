@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive;
+    box-sizing: border-box;
+    max-width: 600px;
+    box-shadow: 0px 2px 20px lightgrey;
+}
+
+html{
+    margin: 20px auto;
+}
+
+main{
+    padding: 45px;
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+
+}
+
+.header-background {
+    background: url("soup.jpg");
+    min-height : 150px; 
+    background-clip: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 46px 
+}
+
+/* typography */
+
+.title {
+    font-size: 40px;
+    margin: 0px;
+    color: white;
+}
+
+.header-background p {
+    color:white;
+    font-style: normal;
+}
+p { 
+    margin: 5px;
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.menu-item-name{
+    font-size: 28px;
+    color: black; 
+}
+
+.menu-item-price, .cart-item-price {
+    font-size : 20px;
+    color: black; 
+}
+
+.menu-item-icon{
+    font-size: 70px; 
+    margin-right: 30px;
+}
+
+
+/* */
+
+.container{
+    display: flex; 
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+button{
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: white; 
+}
+
+.menu-item, .cart-item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+/* margin: auto trick with flexbox: https://css-tricks.com/the-peculiar-magic-of-flexbox-and-auto-margins/ */
+
+.add-to-cart, .cart-item-price{
+    margin-left: auto;
+}
+
+.add-to-cart{
+    border: 1px solid #FFE4E6;;
+}
+.remove-from-cart{
+    font-size : 12px;
+    color: #BBBBBB
+}
+
+.complete-btn, .pay-btn {
+    background-color: #E11D48;
+    border-radius: 0px;
+    color: white;
+    align-self: center;
+    margin-top:50px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;      
+}
+
+#payment-modal, .pay-btn, .success-message{
+     border-radius: 3px;    
+}
+
+#payment-modal{
+    display: none;
+    background: white;
+    position: sticky;
+    bottom: 100px; 
+    margin: auto;
+    padding: 50px;
+    width : 80%;
+    box-shadow: 0px 3px 100px grey;
+ 
+}
+
+#payment-text{
+    text-align: center;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.payment-input{
+    display: block;
+    margin : 20px auto;
+    width: 90%;
+    padding: 1em;
+}
+
+.pay-btn{
+    display: block;
+    margin: 20px auto; 
+    width: 100%;
+}
+
+.success-message{
+    background-color: #FFE4E6;;
+    font-size:32px;
+    text-align: center;
+    padding: 1em;
+    color:#9F1239; 
+}
+/* misc */
+
+hr{
+    margin: 45px 0px;
+}
+
+.cart-hr{
+    margin: 0px;
+    border: 1px solid black;
+}
+
+#your-order{
+    align-self: center;
+}
+
