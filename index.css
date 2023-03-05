@@ -83,7 +83,7 @@ button{
     min-width: 50px;
     border-radius: 50px;
     border: none;
-    background-color: white; 
+    background-color: white;
 }
 
 .menu-item, .cart-item {
@@ -98,7 +98,8 @@ button{
 }
 
 .add-to-cart{
-    border: 1px solid #FFE4E6;;
+    border: 1px solid #FFE4E6;
+    font-size: 32px; 
 }
 .remove-from-cart{
     font-size : 12px;
