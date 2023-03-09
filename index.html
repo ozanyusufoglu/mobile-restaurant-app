@@ -26,12 +26,12 @@
 
         <div id="payment-modal">
             <p id="payment-text">Enter Your Cart Details</p>
-            <form name="payment-form" class="payment-form">
-                <input required type="text" placeholder="Enter your name" class="payment-input">
+            <form name="payment-form" id="payment-form" class="payment-form">
+                <input id="name" required type="text" placeholder="Enter your name" class="payment-input">
                 <input required type="text" id="credit-card" required placeholder="Enter your credit card number"
                     required class="payment-input">
-                <input required type="text" id="cvv" placeholder="Enter your CVV" class="payment-input">
-                <button class="pay-btn">Pay</button>
+                <input type="text" id="cvv" placeholder="Enter your CVV" class="payment-input" required>
+                <button type="submit" class="pay-btn">Pay</button>
             </form>
         </div>
 

@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Smythe', cursive;
+    
     box-sizing: border-box;
     max-width: 600px;
     box-shadow: 0px 2px 20px lightgrey;
@@ -11,15 +11,14 @@ html{
     margin: 20px auto;
 }
 
+body{
+    font-family: 'Smythe', cursive;
+}
 main{
     padding: 45px;
     max-width: 600px; 
     display: flex;
     flex-direction: column;
-}
-
-header{
-
 }
 
 .header-background {
@@ -164,7 +163,7 @@ button{
 /* misc */
 
 hr{
-    margin: 45px 0px;
+    margin: 45px 0px; 
 }
 
 .cart-hr{
