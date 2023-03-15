@@ -36,11 +36,16 @@ function render() {
   let sum = 0;
 
   cartItems.forEach(function (item, index) {
-    sum += item.price;
-    cartElements += `<div class="cart-item" id=${index}>
+    sum += item.price * item.quantity;
+    cartElements += `<div class="cart-item" id=${item.id}>
                                 <p class="menu-item-name">${item.name}</p>
+                                <p class="cart-item-quantity">${
+                                  item.quantity > 0 && "x " + item.quantity
+                                }</p>
                                 <button class="remove-from-cart">Remove</button>    
-                                <p class="cart-item-price">${item.price}</p> 
+                                <p class="cart-item-price">${
+                                  item.price * item.quantity
+                                }</p>
                             </div>`;
   });
 
