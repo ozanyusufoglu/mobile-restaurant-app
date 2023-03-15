@@ -61,11 +61,20 @@ function render() {
 }
 
 document.getElementById("main").addEventListener("click", function (e) {
+  const id = e.target.parentElement.id;
+
   if (e.target.className === "add-to-cart") {
-    cartItems.push(menuData[e.target.parentElement.id]);
+    let inCartIndex = cartItems.findIndex((item) => item.id == id);
+
+    inCartIndex > -1
+      ? cartItems[inCartIndex].quantity++
+      : cartItems.push({ ...menuData[id], quantity: 1 });
     render();
   } else if (e.target.className === "remove-from-cart") {
-    cartItems.pop(menuData[e.target.parentElement.id]);
+    let inCartIndex = cartItems.findIndex((item) => item.id == id);
+    cartItems[inCartIndex].quantity > 1
+      ? cartItems[inCartIndex].quantity--
+      : cartItems.splice(inCartIndex, 1);
     render();
   } else if (e.target.className === "complete-btn") {
     document.getElementById("payment-modal").style.display = "block";
