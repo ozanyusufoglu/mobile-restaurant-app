@@ -1,6 +1,6 @@
 export const menuData = [
   {
-    name: "Vegan Brain Soup",
+    name: "Brain Soup (Vegan)",
     ingredients: ["Lab-grown brain", "organic pumpkin", "mortal flavor"],
     icon: "🍲",
     price: 20,
